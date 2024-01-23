@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Memorial Page for David</title>
+    <title>Devid's Legacy'</title>
     <style>
         body {
             background-color: black;
@@ -16,7 +16,7 @@
         }
 
         header {
-            background-color: orange;
+            background-color: black;
             padding: 20px;
             text-align: center;
         }
@@ -27,12 +27,33 @@
         }
 
         footer {
-            background-color: orange;
+            background-color: black;
             padding: 10px;
             text-align: center;
             position: fixed;
             bottom: 0;
             width: 100%;
+        }
+
+        #center-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        #memorial-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(255, 165, 0, 0.5); /* Orange shadow */
+            margin-bottom: 20px;
+        }
+
+        #memorial-message {
+            max-width: 600px;
+            text-align: justify;
         }
     </style>
 </head>
@@ -42,16 +63,27 @@
         <h1>In Loving Memory of David</h1>
     </header>
 
-    <section>
-        <p>
-            Forever in our hearts, David will be remembered for his kindness, warmth, and the joy he brought to our lives.
-            May his soul rest in peace.
-        </p>
-        <img src="./david.png" height=60% width=60%>
+    <section id="center-container">
+        <img id="memorial-image" src="./david.png" alt="What Happened">
+        <div id="memorial-message">
+            <p>
+                David's passion for life was evident in everything he did. Whether it was sharing a joke that had us all in
+                stitches or providing a caring ear during tough times, he approached each moment with compassion and empathy.
+                His memory will forever remain a source of strength and warmth for those who had the privilege of knowing
+                him. As we bid farewell to David, we are left with a profound sense of loss, yet we take comfort in the
+                countless cherished moments and memories we shared. He leaves behind a legacy of love, laughter, and
+                indelible wisdom that will continue to guide us through the days ahead. Rest in peace, dear friend. Your
+                spirit will live on in our hearts, and you will be deeply missed. 💗💗💗
+                <br>from his friend, S.
+                <br>
+                <br>
+                <br>                <br>
+            </p>
+        </div>
     </section>
 
     <footer>
-        <p>Created with love in memory of David. Please send your message that will show up here to <a href="https://DavidsLegacy2023@gmail.com/"">DavidsLegacy2023@gmail.com</p>
+        <p>Created with love in memory of David. Any message you want to show up here, send to <a href="https://davidslegacy2023@gmail.com/">DavidsLegacy2023@gmail.com.</a></p>
     </footer>
 </body>
 
